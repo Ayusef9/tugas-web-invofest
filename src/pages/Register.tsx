@@ -18,7 +18,7 @@ export default function Register() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit(console.log())}>
+            <form onSubmit={handleSubmit(console.log)}>
             <FormInput text="name" type="text" name="name" register={register} error={errors.name?.message} />  
             <FormInput text="email" type="text" name="email" register={register} error={errors.email?.message} />  
             <FormInput text="password" type="password" name="password" register={register} error={errors.password?.message} />  
