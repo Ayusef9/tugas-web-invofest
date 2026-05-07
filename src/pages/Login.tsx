@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import {z} from "zod";
 import Button from "../components/ui/Button";
+import { Link } from "react-router-dom";
 
 const schema = z.object({
     email: z.string().min(1, "Email harus diisi"),
@@ -24,6 +25,7 @@ export default function Login() {
                 <Button label="Login" variant="primary" />
             </div>
         </form>
+        <p>Belum punya akun? <Link to="/register" className="text-blue-500">Daftar Sekarang</Link></p>
     </div>
   );
 }
