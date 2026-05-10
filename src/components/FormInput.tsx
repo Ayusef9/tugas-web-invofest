@@ -7,6 +7,7 @@ interface FormInputProps {
     name: string;
     register?: any;
     error?: string;
+    
 }
 
 const FormInput: React.FC<FormInputProps> = ({ text, type, name, register, error }) => {
